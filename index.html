@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luscombe Herbals | Native Australian Herbal Remedies</title>
+    <meta name="description" content="Luscombe Herbals offers small-batch herbal remedies including Gumby Gumby capsules, teas, balms, and soaps, handcrafted in Clermont, Queensland." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.png" />
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Luscombe Herbals logo" class="logo" width="40" height="40" />
+                <span>Luscombe Herbals</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" id="primaryNav" aria-label="Primary navigation">
+                <a href="products.html">Products</a>
+                <a href="gumby.html">Gumby Gumby</a>
+                <a href="approach.html">Our Approach</a>
+                <a href="journal.html">Journal</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html" class="nav-cart" aria-label="Cart">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main id="main">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-bg">
+                <img src="assets/images/hero-bg.jpg" alt="Gumby Gumby leaves and native Australian landscape" loading="lazy" />
+            </div>
+            <div class="container hero-content">
+                <h1>Luscombe Herbals</h1>
+                <p class="subheading">Small-batch herbal remedies handcrafted in Clermont, Queensland</p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="btn btn-primary">Browse products</a>
+                    <a href="approach.html" class="btn btn-secondary">Our approach</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTRO -->
+        <section class="section intro">
+            <div class="container">
+                <p class="intro-text">
+                    Luscombe Herbals is a small family operation rooted in Central Queensland.
+                    We prepare native and traditional herbs with care, minimal intervention,
+                    and a deep respect for the plants and the people who use them.
+                </p>
+            </div>
+        </section>
+
+        <!-- APPROACH SNIPPET -->
+        <section class="section approach-snippet">
+            <div class="container">
+                <h2 class="section-title">Our Approach</h2>
+                <div class="approach-grid">
+                    <div class="approach-item">
+                        <h3>Locally harvested</h3>
+                        <p>Our Gumby Gumby is carefully identified and harvested near Clermont, Queensland.</p>
+                    </div>
+                    <div class="approach-item">
+                        <h3>Minimal intervention</h3>
+                        <p>Leaves are naturally dried and cool-milled to preserve their integrity.</p>
+                    </div>
+                    <div class="approach-item">
+                        <h3>Small-batch made</h3>
+                        <p>Every batch is prepared in small quantities with care and attention.</p>
+                    </div>
+                </div>
+                <div class="approach-cta">
+                    <a href="approach.html" class="btn btn-secondary">Read more</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- GUMBY GUMBY FEATURE -->
+        <section class="section gumby-feature">
+            <div class="container">
+                <h2 class="section-title">Gumby Gumby</h2>
+                <div class="gumby-feature-grid">
+                    <div class="gumby-feature-image">
+                        <img src="assets/images/gumby-tree.jpg" alt="Gumby Gumby tree (Pittosporum angustifolium)" loading="lazy" />
+                    </div>
+                    <div class="gumby-feature-text">
+                        <p><em>Pittosporum angustifolium</em> – a native Australian plant with a long history of use in traditional Aboriginal bush medicine.</p>
+                        <p>We prepare our Gumby Gumby from leaves harvested locally, dried naturally, and milled into fine capsules.</p>
+                        <a href="gumby.html" class="btn btn-primary">Learn about Gumby Gumby</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED PRODUCTS -->
+        <section class="section featured-products">
+            <div class="container">
+                <h2 class="section-title">Featured products</h2>
+                <div class="product-grid" id="featuredGrid">
+                    <!-- Cards will be rendered by JS -->
+                </div>
+                <div class="products-cta">
+                    <a href="products.html" class="btn btn-secondary">View all products</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- JOURNAL SNIPPET -->
+        <section class="section journal-snippet">
+            <div class="container">
+                <h2 class="section-title">From the Journal</h2>
+                <div class="journal-grid" id="journalGrid">
+                    <!-- Rendered by JS -->
+                </div>
+                <div class="journal-cta">
+                    <a href="journal.html" class="btn btn-secondary">Read more</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="assets/images/logo.png" alt="Luscombe Herbals" class="footer-logo" width="32" height="32" />
+                <span>Luscombe Herbals</span>
+                <p class="footer-tagline">Small-batch herbal remedies from Clermont, QLD</p>
+            </div>
+            <div class="footer-nav">
+                <a href="products.html">Products</a>
+                <a href="gumby.html">Gumby Gumby</a>
+                <a href="approach.html">Our Approach</a>
+                <a href="journal.html">Journal</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-legal">
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="shipping.html">Shipping</a>
+                <a href="returns.html">Returns</a>
+                <a href="disclaimer.html">Disclaimer</a>
+            </div>
+            <div class="footer-contact">
+                <a href="mailto:hello@luscombeherbals.com.au">hello@luscombeherbals.com.au</a>
+                <span>PO Box 184, Clermont QLD 4721</span>
+                <span>ABN 72 404 996 357</span>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luscombe Herbals. All rights reserved.</p>
+                <p class="disclaimer-small">Information on this website is general in nature and is provided for general reference only. It is not intended as medical advice. Please seek advice from a qualified health professional before using any supplement.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

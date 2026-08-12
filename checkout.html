@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | Luscombe Herbals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg" />
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header (same) -->
+
+    <main id="main">
+        <section class="section">
+            <div class="container" style="max-width:800px;">
+                <h1 class="section-title">Checkout</h1>
+
+                <div style="background:var(--color-white); border-radius:var(--radius); border:1px solid var(--color-border); padding:var(--spacing-lg);">
+                    <p style="text-align:center; color:var(--color-text-light); margin-bottom:var(--spacing-lg);">Complete your order below.</p>
+
+                    <form style="display:grid; gap:var(--spacing-md);">
+                        <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--spacing-md);">
+                            <div>
+                                <label for="first-name" style="display:block; font-weight:500; margin-bottom:4px;">First name</label>
+                                <input id="first-name" type="text" placeholder="First name" required style="width:100%; padding:10px; border:1px solid var(--color-border); border-radius:var(--radius);" />
+                            </div>
+                            <div>
+                                <label for="last-name" style="display:block; font-weight:500; margin-bottom:4px;">Last name</label>
+                                <input id="last-name" type="text" placeholder="Last name" required style="width:100%; padding:10px; border:1px solid var(--color-border); border-radius:var(--radius);" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="email" style="display:block; font-weight:500; margin-bottom:4px;">Email</label>
+                            <input id="email" type="email" placeholder="your@email.com" required style="width:100%; padding:10px; border:1px solid var(--color-border); border-radius:var(--radius);" />
+                        </div>
+
+                        <div>
+                            <label for="address" style="display:block; font-weight:500; margin-bottom:4px;">Address</label>
+                            <input id="address" type="text" placeholder="Street address" required style="width:100%; padding:10px; border:1px solid var(--color-border); border-radius:var(--radius);" />
+                        </div>
+
+                        <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--spacing-md);">
+                            <div>
+                                <label for="city" style="display:block; font-weight:500; margin-bottom:4px;">City / Suburb</label>
+                                <input id="city" type="text" placeholder="City" required style="width:100%; padding:10px; border:1px solid var(--color-border); border-radius:var(--radius);" />
+                            </div>
+                            <div>
+                                <label for="postcode" style="display:block; font-weight:500; margin-bottom:4px;">Postcode</label>
+                                <input id="postcode" type="text" placeholder="Postcode" required style="width:100%; padding:10px; border:1px solid var(--color-border); border-radius:var(--radius);" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="state" style="display:block; font-weight:500; margin-bottom:4px;">State</label>
+                            <select id="state" required style="width:100%; padding:10px; border:1px solid var(--color-border); border-radius:var(--radius);">
+                                <option value="">Select state</option>
+                                <option value="QLD">Queensland</option>
+                                <option value="NSW">New South Wales</option>
+                                <option value="VIC">Victoria</option>
+                                <option value="TAS">Tasmania</option>
+                                <option value="SA">South Australia</option>
+                                <option value="WA">Western Australia</option>
+                                <option value="NT">Northern Territory</option>
+                                <option value="ACT">Australian Capital Territory</option>
+                            </select>
+                        </div>
+
+                        <hr style="border:0; border-top:1px solid var(--color-border); margin:var(--spacing-md) 0;" />
+
+                        <div style="display:flex; justify-content:space-between; font-weight:600; padding:var(--spacing-sm) 0;">
+                            <span>Total</span>
+                            <span>$40.00</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width:100%; text-align:center;">Place order</button>
+
+                        <p style="font-size:0.8rem; color:var(--color-text-light); text-align:center; margin-top:var(--spacing-sm);">
+                            This is a demo checkout. Payment processing is not active on this placeholder site.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same) -->
+
+    <script src="script.js"></script>
+</body>
+</html>

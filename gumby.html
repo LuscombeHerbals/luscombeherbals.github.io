@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gumby Gumby | Luscombe Herbals</title>
+    <meta name="description" content="Learn about Gumby Gumby (Pittosporum angustifolium), a native Australian plant with a long history of traditional use." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg" />
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header (same) -->
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="assets/images/logo.svg" alt="Luscombe Herbals logo" class="logo" width="40" height="40" />
+                <span>Luscombe Herbals</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" id="primaryNav" aria-label="Primary navigation">
+                <a href="products.html">Products</a>
+                <a href="gumby.html" aria-current="page">Gumby Gumby</a>
+                <a href="approach.html">Our Approach</a>
+                <a href="journal.html">Journal</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html" class="nav-cart" aria-label="Cart">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Gumby Gumby</h1>
+                <p class="intro-text" style="margin-bottom:var(--spacing-lg);">
+                    <em>Pittosporum angustifolium</em> – a native Australian plant with a long history of use in traditional Aboriginal bush medicine.
+                </p>
+
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--spacing-xl); align-items:start; margin-bottom:var(--spacing-xl);">
+                    <div>
+                        <img src="assets/images/gumby-tree.jpg" alt="Gumby Gumby tree" style="border-radius:var(--radius); background:var(--color-cream-dark); width:100%;" loading="lazy" />
+                    </div>
+                    <div>
+                        <h2>About Gumby Gumby</h2>
+                        <p>Gumby Gumby is a small tree or shrub native to arid and semi-arid regions of Australia. It has been used for generations in traditional Aboriginal bush medicine.</p>
+                        <p>People are drawn to it for many different reasons, and some choose to include it as part of their personal approach to wellbeing.</p>
+                        <p style="font-size:0.9rem; color:var(--color-text-light); margin-top:var(--spacing-md);">
+                            <strong>Disclaimer:</strong> This information is general in nature and is provided for general reference only. It is not intended as medical advice. Please seek advice from a qualified health professional before using any supplement.
+                        </p>
+                    </div>
+                </div>
+
+                <h2>How we work with Gumby Gumby</h2>
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:var(--spacing-lg); margin:var(--spacing-lg) 0;">
+                    <div style="background:var(--color-white); padding:var(--spacing-lg); border-radius:var(--radius); border:1px solid var(--color-border);">
+                        <h3>Harvesting</h3>
+                        <p>We carefully identify and harvest Gumby Gumby leaves locally near Clermont, Queensland.</p>
+                    </div>
+                    <div style="background:var(--color-white); padding:var(--spacing-lg); border-radius:var(--radius); border:1px solid var(--color-border);">
+                        <h3>Drying</h3>
+                        <p>Leaves are naturally dried to preserve their integrity and active compounds.</p>
+                    </div>
+                    <div style="background:var(--color-white); padding:var(--spacing-lg); border-radius:var(--radius); border:1px solid var(--color-border);">
+                        <h3>Milling</h3>
+                        <p>Dried leaves are cool-milled into a fine powder, then encapsulated with minimal intervention.</p>
+                    </div>
+                </div>
+
+                <h2>Gumby Gumby products</h2>
+                <div class="product-grid" style="margin-top:var(--spacing-lg);">
+                    <div class="product-card">
+                        <div class="product-card-image">
+                            <img src="assets/images/product-gumby.jpg" alt="Gumby Gumby capsules" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h3>Gumby Gumby</h3>
+                            <div class="price">$40</div>
+                            <div class="pack">200 capsule pack</div>
+                            <div class="ingredients">100% Gumby Gumby leaf</div>
+                            <a href="product.html?slug=gumby" class="btn btn-outline">View product</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card-image">
+                            <img src="assets/images/product-tea.jpg" alt="Gumby Gumby tea" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h3>Gumby Gumby Tea</h3>
+                            <div class="price">$18</div>
+                            <div class="pack">50g loose leaf</div>
+                            <div class="ingredients">100% Gumby Gumby leaf</div>
+                            <a href="product.html?slug=gumby-tea" class="btn btn-outline">View product</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card-image">
+                            <img src="assets/images/product-balm.jpg" alt="Gumby Gumby balm" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h3>Gumby Gumby Balm</h3>
+                            <div class="price">$28</div>
+                            <div class="pack">60ml tin</div>
+                            <div class="ingredients">Gumby Gumby infused oil</div>
+                            <a href="product.html?slug=gumby-balm" class="btn btn-outline">View product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transition note for Steve's Gumby Gumby customers -->
+                <div style="margin-top:var(--spacing-xl); padding:var(--spacing-lg); background:var(--color-cream-dark); border-radius:var(--radius); border-left:4px solid var(--color-olive);">
+                    <h3 style="color:var(--color-olive-dark);">A note for Steve's Gumby Gumby customers</h3>
+                    <p>In late 2025, we were entrusted with continuing this small local operation after Steve stepped away. Steve had been preparing Gumby Gumby in Clermont for over 13 years and has generously shared his knowledge with us.</p>
+                    <p>We are committed to maintaining the same quality, care, and reasonable pricing that Steve's customers have come to expect.</p>
+                    <p style="margin-top:var(--spacing-sm);"><a href="about.html">Learn more about our story →</a></p>
+                </div>
+
+                <!-- FAQs -->
+                <h2 style="margin-top:var(--spacing-xl);">Frequently asked questions</h2>
+                <div style="display:grid; gap:var(--spacing-md); margin-top:var(--spacing-lg);">
+                    <details style="background:var(--color-white); padding:var(--spacing-md); border-radius:var(--radius); border:1px solid var(--color-border);">
+                        <summary style="font-weight:600; cursor:pointer;">What is Gumby Gumby used for?</summary>
+                        <p style="margin-top:var(--spacing-sm);">Gumby Gumby has a long history of use in traditional Aboriginal bush medicine. People are drawn to it for many different reasons, and some choose to include it as part of their personal approach to wellbeing. We encourage everyone to do their own research.</p>
+                    </details>
+                    <details style="background:var(--color-white); padding:var(--spacing-md); border-radius:var(--radius); border:1px solid var(--color-border);">
+                        <summary style="font-weight:600; cursor:pointer;">How do I take Gumby Gumby capsules?</summary>
+                        <p style="margin-top:var(--spacing-sm);">The capsules are designed to be taken orally with water. As with any supplement, we recommend consulting a qualified health professional for personalised advice.</p>
+                    </details>
+                    <details style="background:var(--color-white); padding:var(--spacing-md); border-radius:var(--radius); border:1px solid var(--color-border);">
+                        <summary style="font-weight:600; cursor:pointer;">Is Gumby Gumby safe?</summary>
+                        <p style="margin-top:var(--spacing-sm);">This information is general in nature and is provided for general reference only. It is not intended as medical advice. Please seek advice from a qualified health professional before using any supplement.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same) -->
+    <footer class="site-footer">
+        <!-- ... same as index ... -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
